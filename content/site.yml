@@ -11,6 +11,8 @@ beehiiv:
   # Fallback: the button opens this page until the embed below is filled in.
   subscribe_url: https://theatomandthemarket.beehiiv.com/subscribe
   # Paste here the beehiiv "embedded subscribe form" snippet (Audience → Subscribe forms → Embed).
+  # PRIVACY: the embed loads beehiiv inside the page and may set cookies. If you use it,
+  # update content/privacy.md (section "Cookies") and check whether a cookie banner is needed.
   embed: ""
 
 home:

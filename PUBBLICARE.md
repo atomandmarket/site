@@ -42,7 +42,10 @@ Si aggiungono record, la posta resta com'è.
 | A | @ | 185.199.109.153 |
 | A | @ | 185.199.110.153 |
 | A | @ | 185.199.111.153 |
-| CNAME | www | `<tuo-utente-github>.github.io` |
+| CNAME | www | `atomandmarket.github.io` |
+| TXT | `_github-pages-challenge-atomandmarket` | `921ad7b7c6ae4b7c02a3f6a7fc31da` (verifica del dominio per l'organizzazione GitHub) |
+
+Repository: https://github.com/atomandmarket/site (organizzazione `atomandmarket`, proprietario l'account personale).
 
 Eventuali record A già presenti per `@` (pagina di cortesia Aruba) vanno tolti. **I record MX della posta non si toccano.**
 

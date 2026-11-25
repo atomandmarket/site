@@ -53,6 +53,8 @@ nav .cta:hover { color: var(--accent); }
 .hero img { display: block; width: min(680px, 100%); height: auto; margin: -24px auto 0; }
 .hero p { margin: 8px auto 0; max-width: 52ch; font-size: 18px; color: var(--cream-muted); }
 .fine { margin-top: 12px; font-size: 13px; color: #6f6a62; }
+.fine a { color: var(--cream-muted); text-decoration: underline; text-underline-offset: 2px; }
+.fine a:hover { color: var(--cream); }
 
 /* ---------- Subscribe ---------- */
 .subscribe { margin: 36px auto 0; display: flex; gap: 8px; max-width: 460px; }

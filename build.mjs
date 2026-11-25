@@ -158,8 +158,11 @@ const subBand = () => `
   <div class="wrap">
     <p>${esc(SITE.subscribe_band)}</p>
     ${subscribeForm()}
+    ${privacyNote()}
   </div>
 </div>`;
+
+const privacyNote = () => `<div class="fine">Free. Unsubscribe anytime. <a href="/privacy/">Privacy</a></div>`;
 
 const footer = () => `
 <footer>
@@ -172,6 +175,7 @@ const footer = () => `
       <a href="${esc(SITE.linkedin)}" rel="me">LinkedIn</a>
       <a href="/about/#contact">Contact</a>
       <a href="/feed.xml">RSS</a>
+      <a href="/privacy/">Privacy</a>
     </div>
   </div>
 </footer>`;
@@ -285,7 +289,7 @@ function homePage(items) {
     <img src="/assets/logo.webp" alt="${esc(SITE.title)}" width="1536" height="1024">
     <p>${esc(SITE.home.intro)}</p>
     ${subscribeForm()}
-    <div class="fine">${esc(SITE.home.subscribe_note)}</div>
+    <div class="fine">${esc(SITE.home.subscribe_note)} <a href="/privacy/">Privacy</a></div>
   </div>
 </div>
 
@@ -579,6 +583,30 @@ ${footer()}`;
   });
 }
 
+function privacyPage() {
+  const file = path.join(CONTENT, "privacy.md");
+  const raw = fs.readFileSync(file, "utf8").replace(/^﻿/, "");
+  const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
+  if (!m) throw new ContentError("privacy.md: missing front matter.");
+  const fm = YAML.parse(m[1]) || {};
+  const body = `
+${topbar("")}
+<main>
+  <div class="wrap">
+    <div class="read art-head">
+      <div class="label">Privacy</div>
+      <h1>${esc(fm.title || "Privacy")}</h1>
+      <p class="byline-date" style="margin-top:18px;font-size:14px;color:var(--faint)">Last updated ${fmtLong(String(fm.updated))}</p>
+    </div>
+    <div class="read body" style="padding-bottom:80px">
+${marked.parse(m[2])}
+    </div>
+  </div>
+</main>
+${footer()}`;
+  return layout({ title: fm.title || "Privacy", description: "How personal data are handled on The Atom & The Market.", urlPath: "/privacy/", body });
+}
+
 function notFoundPage() {
   const body = `
 ${topbar("")}
@@ -612,7 +640,7 @@ ${items.filter((a) => !a.draft).map((a) => `  <item>
 
 function sitemap(items) {
   const base = SITE.url.replace(/\/$/, "");
-  const urls = ["/", "/about/", "/technologies/", "/author/", ...items.filter((a) => !a.draft).map((a) => a.url)];
+  const urls = ["/", "/about/", "/technologies/", "/author/", "/privacy/", ...items.filter((a) => !a.draft).map((a) => a.url)];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${base}${u}</loc></url>`).join("\n")}
@@ -687,6 +715,7 @@ function build() {
   write(path.join(DIST, "technologies", "index.html"), archivePage(items));
   write(path.join(DIST, "about", "index.html"), aboutPage());
   write(path.join(DIST, "author", "index.html"), authorPage());
+  write(path.join(DIST, "privacy", "index.html"), privacyPage());
   write(path.join(DIST, "404.html"), notFoundPage());
   for (const a of items) write(path.join(DIST, "technologies", a.slug, "index.html"), articlePage(a));
   write(path.join(DIST, "feed.xml"), feed(items));
