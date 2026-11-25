@@ -1,0 +1,16 @@
+{
+  "name": "atomandmarket-site",
+  "private": true,
+  "type": "module",
+  "description": "The Atom & The Market — static site generator",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --drafts --watch",
+    "preview": "node build.mjs --drafts"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "marked": "^15.0.0",
+    "yaml": "^2.6.0"
+  }
+}

@@ -1,0 +1,103 @@
+# All fixed texts of the site. Edit here; articles live in content/technologies/.
+# Voice: one author, first person singular ("I"), never "we".
+
+title: The Atom & The Market
+url: https://atomandmarket.com
+description: Technologies and materials from materials and energy research that industry can use — what they do, who should care, and how far they are from production.
+contact_email: editor@atomandmarket.com   # create this mailbox on Aruba, or change it
+linkedin: https://www.linkedin.com/in/andreagamucci
+
+beehiiv:
+  # Fallback: the button opens this page until the embed below is filled in.
+  subscribe_url: https://theatomandthemarket.beehiiv.com/subscribe
+  # Paste here the beehiiv "embedded subscribe form" snippet (Audience → Subscribe forms → Embed).
+  embed: ""
+
+home:
+  intro: Technologies and materials from materials and energy research that industry can use — what they do, who should care, and how far they are from production.
+  subscribe_note: One new technology every week. Free.
+  empty: The first technology is on its way.
+  readiness_intro: "Every technology gets the same readiness card: five criteria that keep technologies comparable, from batteries to cement, each with a short reason specific to that technology."
+
+subscribe_band: One new technology from materials and energy research, every week.
+
+criteria:
+  - key: maturity
+    name: Maturity
+    question: How far is it from a product?
+  - key: scalability
+    name: Scalability
+    question: Can materials and process go to volume?
+  - key: advantage
+    name: Advantage
+    question: What does it offer industry?
+  - key: adoption
+    name: Adoption
+    question: What must an industrial user change to adopt it?
+  - key: evidence
+    name: Evidence
+    question: How solid and realistic are the results?
+
+verdicts:
+  scaling:
+    label: Scaling
+    text: Industrial path visible within about five years.
+  promising:
+    label: Promising
+    text: Real advance, a few named bottlenecks to solve.
+  early:
+    label: Early science
+    text: Worth watching, a decade or more out.
+  hype:
+    label: Hype check
+    text: The claims go well beyond the evidence.
+
+author:
+  name: Andrea Gamucci
+  role: Physicist and deep-tech executive
+  role_long: Physicist and deep-tech executive. Founder of The Atom & The Market.
+  photo: /assets/andrea-gamucci.jpg
+  photo_small: /assets/andrea-gamucci-160.jpg
+  short_bio: "Fifteen years between the lab and the factory: from research on graphene and semiconductor nanostructures to leading an IIT spin-off from concept to €20M+ in funding, and bringing new materials to market with global industrial groups."
+  facts:
+    - ["PhD", "Applied Physics, Pisa"]
+    - ["40+", "publications"]
+    - ["€20M+", "raised for a deep-tech spin-off"]
+  bio:
+    - "Andrea has spent fifteen years on both sides of the gap this site is about: between a result in the lab and a product in a factory."
+    - "He started as an experimental physicist. After a PhD in Applied Physics at the University of Pisa, he worked on semiconductor nanostructures and graphene at CNR and Scuola Normale Superiore, publishing more than 40 peer-reviewed papers and filing patents on devices and materials."
+    - "He then moved to the other side. At the Italian Institute of Technology he led the transfer of graphene and 2D materials to industry, and the creation of BeDimensional, the IIT spin-off he took from concept to more than €20 million in private funding. As its Chief Technology Officer and now Chief Strategic Marketing Officer, he has brought new materials from first meeting to supply with global multinationals and leading industrial groups in automotive, aerospace, shipbuilding, luxury, energy and chemicals. He was deputy leader of a Spearhead Project of the EU Graphene Flagship, alongside major battery and automotive manufacturers."
+    - "The Atom & The Market applies the questions he deals with every day — can it be made at scale, at what cost, and who will buy it — to the most promising research in materials and energy."
+  how_i_work:
+    - title: Find
+      text: I read new research in materials and energy, from journals and preprints, looking for results that solve a problem industry already pays for, or open a use that did not exist.
+    - title: Translate
+      text: "I explain the technology in industrial terms: what it does, the numbers that matter and the conditions behind them, and who should pay attention."
+    - title: Assess
+      text: I rate how close it is to production with the same five criteria every time, and name what still stands between the lab and the line.
+
+about:
+  lead: The Atom & The Market scouts materials and energy research for technologies that industry can use, and explains them in industrial terms.
+  paragraphs:
+    - "Every week, thousands of papers report new materials, devices and processes. A few of them will end up in a factory. Most industrial teams don't have the time to read the literature, and most coverage of it stops at the headline. I read the research, pick the technologies with real industrial potential, and say what they do, who should care, and how far they are from production."
+    - "Some technologies improve on something that already exists. Others open uses that did not exist before. Either way, I look at them from the factory side: materials, process, cost, and the evidence behind the claims."
+  principles:
+    - title: Source first
+      text: Every article opens with the full reference of the research it is based on, with a link to the original.
+    - title: Numbers with their conditions
+      text: Every figure I quote can be traced to the paper or its supporting information, together with how it was measured.
+    - title: Independent
+      text: No one pays to be covered. If I ever run sponsorships, they will be labelled and kept apart from the assessments.
+    - title: Corrections
+      text: If I get something wrong, I fix it and say so at the bottom of the article.
+    - title: Disclosure
+      text: I work at BeDimensional, a company active in 2D materials. When an article touches technologies related to that work, I say so in the article.
+  contact:
+    - title: Spotted a technology worth covering?
+      text: Researchers, tech-transfer offices and companies are welcome to send me their work. I choose independently what to cover.
+    - title: Write to me
+      text: For corrections, suggestions and collaborations.
+
+archive_intro: Every technology covered so far, rated with the same readiness card. Filter by sector, verdict or who it matters to.
+
+disclaimer: Not investment advice. Figures are taken from the paper and its supporting information.
