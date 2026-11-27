@@ -16,12 +16,12 @@ beehiiv:
   embed: ""
 
 home:
-  intro: Technologies and materials from materials and energy research that industry can use — what they do, who should care, and how far they are from production.
-  subscribe_note: One new technology every week. Free.
+  intro: A review of technologies and materials from materials and energy research that industry can use.
+  subscribe_note: Discover the most promising new technologies.
   empty: The first technology is on its way.
-  readiness_intro: "Every technology gets the same readiness card: five criteria that keep technologies comparable, from batteries to cement, each with a short reason specific to that technology."
+  readiness_intro: "Every technology gets a readiness card: five criteria that keep technologies comparable, from batteries to cement, each with a short reason specific to that technology."
 
-subscribe_band: One new technology from materials and energy research, every week.
+subscribe_band: Discover the most promising new technologies from materials and energy research.
 
 criteria:
   - key: maturity
@@ -64,15 +64,15 @@ author:
   facts:
     - ["PhD", "Applied Physics, Pisa"]
     - ["40+", "publications"]
-    - ["€20M+", "raised for a deep-tech spin-off"]
+    - ["100+", "materials and solutions successfully tested"]
   bio:
     - "Andrea has spent fifteen years on both sides of the gap this site is about: between a result in the lab and a product in a factory."
     - "He started as an experimental physicist. After a PhD in Applied Physics at the University of Pisa, he worked on semiconductor nanostructures and graphene at CNR and Scuola Normale Superiore, publishing more than 40 peer-reviewed papers and filing patents on devices and materials."
-    - "He then moved to the other side. At the Italian Institute of Technology he led the transfer of graphene and 2D materials to industry, and the creation of BeDimensional, the IIT spin-off he took from concept to more than €20 million in private funding. As its Chief Technology Officer and now Chief Strategic Marketing Officer, he has brought new materials from first meeting to supply with global multinationals and leading industrial groups in automotive, aerospace, shipbuilding, luxury, energy and chemicals. He was deputy leader of a Spearhead Project of the EU Graphene Flagship, alongside major battery and automotive manufacturers."
-    - "The Atom & The Market applies the questions he deals with every day — can it be made at scale, at what cost, and who will buy it — to the most promising research in materials and energy."
+    - "He then moved to the other side. At the Italian Institute of Technology he contributed in leading the transfer of graphene and 2D materials to industry, and the creation of BeDimensional, the IIT spin-off he took from concept to more than €20 million in private funding. As its Chief Technology Officer and Chief Strategic Marketing Officer, he has brought new materials from first meeting to supply with global multinationals and leading industrial groups in automotive, aerospace, shipbuilding, luxury, energy and chemicals. He was deputy leader of a Spearhead Project of the EU Graphene Flagship, alongside major battery and automotive manufacturers."
+    - "The Atom & The Market applies the questions he deals with every day (can it be made at scale, at what cost, and who will buy it) to the most promising research in materials and energy."
   how_i_work:
     - title: Find
-      text: I read new research in materials and energy, from journals and preprints, looking for results that solve a problem industry already pays for, or open a use that did not exist.
+      text: I read new research in materials and energy, from journals and preprints, looking for results that claim to solve a problem industry already pays for, or open a use that did not exist.
     - title: Translate
       text: "I explain the technology in industrial terms: what it does, the numbers that matter and the conditions behind them, and who should pay attention."
     - title: Assess
@@ -87,7 +87,7 @@ about:
     - title: Source first
       text: Every article opens with the full reference of the research it is based on, with a link to the original.
     - title: Numbers with their conditions
-      text: Every figure I quote can be traced to the paper or its supporting information, together with how it was measured.
+      text: Every figure or table I quote can be traced to the paper or its supporting information, together with how it was measured.
     - title: Independent
       text: No one pays to be covered. If I ever run sponsorships, they will be labelled and kept apart from the assessments.
     - title: Corrections
