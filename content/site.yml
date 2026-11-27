@@ -8,11 +8,12 @@ contact_email: editor@atomandmarket.com   # create this mailbox on Aruba, or cha
 linkedin: https://www.linkedin.com/in/andreagamucci
 
 beehiiv:
-  # Fallback: the button opens this page until the embed below is filled in.
+  # Subscribe form (beehiiv → Audience → Subscribe forms). It is loaded only when the reader
+  # clicks "Subscribe", so no beehiiv request or cookie happens before that (see privacy.md).
+  form_id: 20e80d27-0495-435f-9d8f-1cb370f62d03
+  # Used if JavaScript is off, or if form_id is empty.
   subscribe_url: https://theatomandthemarket.beehiiv.com/subscribe
-  # Paste here the beehiiv "embedded subscribe form" snippet (Audience → Subscribe forms → Embed).
-  # PRIVACY: the embed loads beehiiv inside the page and may set cookies. If you use it,
-  # update content/privacy.md (section "Cookies") and check whether a cookie banner is needed.
+  # Alternative: paste a full embed snippet here (loads on every page view: review privacy.md first).
   embed: ""
 
 home:

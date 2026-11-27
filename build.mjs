@@ -145,8 +145,14 @@ const topbar = (current) => `
   </div>
 </div>`;
 
+// beehiiv form loaded only on click: no third-party request or cookie until the reader asks to subscribe.
 function subscribeForm() {
-  if (SITE.beehiiv?.embed) return `<div class="subscribe-embed">${SITE.beehiiv.embed}</div>`;
+  const b = SITE.beehiiv || {};
+  if (b.form_id) return `<div class="subscribe-lazy" data-beehiiv-id="${esc(b.form_id)}">
+      <button type="button" class="subscribe-open">Subscribe to the newsletter</button>
+      <noscript><a class="subscribe-open" href="${esc(b.subscribe_url)}">Subscribe to the newsletter</a></noscript>
+    </div>`;
+  if (b.embed) return `<div class="subscribe-embed">${b.embed}</div>`;
   return `<form class="subscribe" action="${esc(SITE.beehiiv.subscribe_url)}" method="get" target="_blank" rel="noopener">
       <input type="email" name="email" placeholder="you@company.com" aria-label="Email address" required>
       <button type="submit">Subscribe</button>
@@ -209,10 +215,26 @@ ${extraHead}
 </head>
 <body>
 ${body}
+${SITE.beehiiv?.form_id ? SUBSCRIBE_SCRIPT : ""}
 </body>
 </html>
 `;
 }
+
+const SUBSCRIBE_SCRIPT = `<script>
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest("button.subscribe-open");
+  if (!btn) return;
+  const box = btn.closest(".subscribe-lazy");
+  const s = document.createElement("script");
+  s.async = true;
+  s.src = "https://subscribe-forms.beehiiv.com/v3/loader.js";
+  s.setAttribute("data-beehiiv-form", box.dataset.beehiivId);
+  btn.remove();
+  box.classList.add("open");
+  box.appendChild(s);
+});
+</script>`;
 
 function findRow(a) {
   return `

@@ -72,6 +72,14 @@ nav .cta:hover { color: var(--accent); }
 .subscribe button:hover { background: #b0431a; }
 .subscribe-embed { margin: 28px auto 0; max-width: 480px; }
 .subscribe-embed iframe { max-width: 100%; }
+.subscribe-lazy { margin: 36px auto 0; max-width: 480px; min-height: 50px; }
+.sub-band .subscribe-lazy { margin-top: 28px; }
+.subscribe-lazy iframe { max-width: 100%; }
+.subscribe-open {
+  display: inline-block; font: inherit; font-size: 15px; font-weight: 550; padding: 14px 26px;
+  border: 0; border-radius: 8px; background: var(--accent); color: #fff; cursor: pointer;
+}
+.subscribe-open:hover { background: #b0431a; }
 
 .sub-band { background: var(--night); color: var(--cream); text-align: center; padding: 72px 0; }
 .sub-band p { color: var(--cream-muted); font-size: 18px; max-width: 46ch; margin: 0 auto; }

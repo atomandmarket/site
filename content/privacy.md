@@ -1,6 +1,6 @@
 ---
 title: Privacy and cookies
-updated: 2026-11-25
+updated: 2026-11-27
 ---
 
 This notice explains how personal data are handled on atomandmarket.com and in its newsletter, under the EU General Data Protection Regulation (Regulation (EU) 2016/679, "GDPR") and Italian data protection law.
@@ -11,9 +11,17 @@ The data controller is **Andrea Gamucci**, author of The Atom & The Market. For 
 
 ## Cookies
 
-This website **does not use cookies** or similar technologies (local storage, tracking pixels, analytics, advertising or social media scripts). It loads no fonts, scripts or images from third-party servers. For this reason no cookie banner is shown.
+This website **does not use cookies** or similar technologies (local storage, tracking pixels, analytics, advertising or social media scripts). When you browse it, no fonts, scripts or images are loaded from third-party servers. For this reason no cookie banner is shown.
 
-Links to other websites (for example LinkedIn, the original research papers, or the newsletter sign-up page) take you to services with their own privacy and cookie policies.
+**Only if you click "Subscribe to the newsletter"**, the sign-up form provided by beehiiv is loaded inside the page. From that moment, and only for that purpose:
+
+- beehiiv sets a session cookie (`_subscribe_forms_session`) needed for the form to work;
+- beehiiv's security providers, Cloudflare (`__cf_bm`) and HUMAN Security (cookies and local storage starting with `_px`), check that the sign-up comes from a person and not from a bot;
+- the form's font is downloaded from Google Fonts, so Google receives your IP address.
+
+These are technical tools, strictly necessary to provide the sign-up you asked for and to protect it from abuse; they are not used for advertising or profiling. If you prefer not to load them, do not open the form, or write to me and I will add your address manually.
+
+Links to other websites (for example LinkedIn or the original research papers) take you to services with their own privacy and cookie policies.
 
 ## What data are processed, and why
 
@@ -27,7 +35,7 @@ Your data are never sold, and are not used for automated decisions or profiling.
 
 ## Who else receives the data
 
-Only the service providers named above, acting as data processors: **GitHub, Inc.** (website hosting) and **beehiiv, Inc.** (newsletter), and the email provider used for the contact address. GitHub and beehiiv are based in the United States; transfers of personal data outside the European Economic Area rely on the safeguards provided by the GDPR, such as the EU–US Data Privacy Framework or the European Commission's Standard Contractual Clauses.
+Only the service providers named above, acting as data processors: **GitHub, Inc.** (website hosting), **beehiiv, Inc.** (newsletter and sign-up form, with its security providers Cloudflare and HUMAN Security, and Google Fonts for the form's font), and the email provider used for the contact address. Several of these providers are based in the United States; transfers of personal data outside the European Economic Area rely on the safeguards provided by the GDPR, such as the EU–US Data Privacy Framework or the European Commission's Standard Contractual Clauses.
 
 ## How long data are kept
 
