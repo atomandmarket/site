@@ -16,8 +16,13 @@ beehiiv:
   # Alternative: paste a full embed snippet here (loads on every page view: review privacy.md first).
   embed: ""
 
+analytics:
+  # GoatCounter site code (the part before .goatcounter.com). Cookieless, see privacy.md.
+  # Leave empty to switch visitor statistics off.
+  goatcounter: atomandmarket
+
 home:
-  intro: A review of technologies and materials from materials and energy research that industry can use.
+  intro: A review of technologies from materials and energy research that industry can use.
   subscribe_note: Discover the most promising new technologies.
   empty: The first technology is on its way.
   readiness_intro: "Every technology gets a readiness card: five criteria that keep technologies comparable, from batteries to cement, each with a short reason specific to that technology."

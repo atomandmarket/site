@@ -216,6 +216,7 @@ ${extraHead}
 <body>
 ${body}
 ${SITE.beehiiv?.form_id ? SUBSCRIBE_SCRIPT : ""}
+${SITE.analytics?.goatcounter ? `<script data-goatcounter="https://${esc(SITE.analytics.goatcounter)}.goatcounter.com/count" async src="/count.js"></script>` : ""}
 </body>
 </html>
 `;
